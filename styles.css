@@ -1,0 +1,88 @@
+body {
+	background: #48505A;
+	color: #FFF;
+	font: normal 14px/1.375 Georgia, Times, serif
+}
+
+/* now I see why we set page id. To be able to quickly add general margins to the body */
+
+#page {
+	margin: 40px auto 40px;
+	width: 988px;
+}
+
+ /*causes the figure element to "float" all the way to the left of its container(body element). 
+Reducesing it's width to match the width of the elements it contains. */
+.entry .main p.figure {
+	background: #2B3036;
+	float: left; 
+	font-size: 14px;
+	font-style: italic;
+	margin-right:1em;
+	padding: 10px;
+	text-indent: 0;
+	text-align: center;
+}
+
+/*display:block-we've turned an inline image into a block level
+ box that behaves as a p or div-pushing adjacent text down to the subsequent line*/
+ .entry .main p.figure img {
+	display: block; 
+	margin-bottom: 0.4em;
+}
+
+
+.entry .main p {
+	margin: 0 0 1em;
+	text-indent: 1.5em;
+}
+
+/* chained a few class selectors together to create a new descendant selector.
+This narrows the scope for these rules as we pair them to new markup structure
+You've gotta be specific. Apply simplistic markup and follow up with the same type of CSS.
+So in the long run, if say you add more elements in your html, it won't fiddle with your
+specificity.  */
+
+h1 {
+	margin-left: 144px;
+	width: 700px;
+}
+
+.entry h2{
+	float: right;
+	width: 844px;
+}
+
+.entry .info {
+	float: left;
+	width: 124px;
+}
+
+.entry .content {
+	float: right;
+	width: 844px;
+}
+/*We did this, so have only the .info to the left. So we shift the whole box right, and the mini
+boxes inside in opposite directions. one left and one right */
+/* Here we are floating .main to the left, and .meta to the right */
+
+.entry .main {
+	float: left;
+	width: 700px;
+}
+
+.entry .meta {
+	float: right;
+	width: 124px;
+}
+
+
+#footer {
+	margin: 100px 0 0 50px;
+	background-color:#2B3036;
+	clear: both;
+	text-align: center;
+	border-radius: 20px;
+	font-size: 12px;
+	padding: 1.5px;
+}
