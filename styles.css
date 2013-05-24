@@ -78,11 +78,12 @@ boxes inside in opposite directions. one left and one right */
 
 
 #footer {
-	margin: 100px 0 0 50px;
+	
 	background-color:#2B3036;
 	clear: both;
 	text-align: center;
 	border-radius: 20px;
 	font-size: 12px;
 	padding: 1.5px;
+	float: bottom;
 }
